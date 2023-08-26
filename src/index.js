@@ -13,7 +13,7 @@ import ramosRoutes from './routes/ramos.routes.js';
 import respuestasRoutes from './routes/respuestas.routes.js';
 
 app.use(cors({
-    origin: "https://epauta.vercel.app/",
+    origin: "https://epauta.vercel.app",
     credentials: true
   }))
   
