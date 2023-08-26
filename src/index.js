@@ -12,20 +12,11 @@ import profesoresRoutes from './routes/profesores.routes.js';
 import ramosRoutes from './routes/ramos.routes.js';
 import respuestasRoutes from './routes/respuestas.routes.js';
 
-const allowedOrigins = ['http://localhost:5173', 'https://epauta.vercel.app/'];
-
-const corsOptions = {
-  origin: (origin, callback) => {
-    if (allowedOrigins.includes(origin)) {
-      callback(null, true);
-    } else {
-      callback(new Error('Not allowed by CORS'));
-    }
-  },
-  credentials: true,
-};
-
-app.use(cors(corsOptions));
+app.use(cors({
+    origin: "https://epauta.vercel.app/",
+    credentials: true
+  }))
+  
 app.use(express.json());
 app.use(cookieParser());
 app.get('/', (req, res) => {
