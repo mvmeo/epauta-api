@@ -15,13 +15,7 @@ import respuestasRoutes from './routes/respuestas.routes.js';
 const allowedOrigins = ['http://localhost:5173', 'https://epauta.vercel.app/'];
 
 const corsOptions = {
-  origin: (origin, callback) => {
-    if (allowedOrigins.includes(origin)) {
-      callback(null, true);
-    } else {
-      callback(new Error('Not allowed by CORS'));
-    }
-  },
+  origin: allowedOrigins,
   credentials: true,
 };
 
