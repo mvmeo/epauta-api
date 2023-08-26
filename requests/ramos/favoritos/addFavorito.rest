@@ -1,0 +1,7 @@
+POST http://localhost:3000/api/ramos/favoritos
+Content-Type: application/json
+
+{
+    "idEstudiante": 4,
+    "codigoRamo": "CBM-1005"
+}

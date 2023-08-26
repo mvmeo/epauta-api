@@ -1,0 +1,14 @@
+POST http://localhost:3000/api/material
+Content-Type: application/json
+
+{
+"tipo": "Ayudantia 5", 
+"año": "2023",
+"semestre": "1",
+"tags": "Enunciado, digital",
+"descripcion": "Esta es una ayudantía de PRUEBAaaaa 4",
+"archivo": "https://www.a.com", 
+"idRamo": "CBM-1000",
+"idEstudiante": 4
+}
+

@@ -1,0 +1,10 @@
+POST http://localhost:3000/api/register
+Content-Type: application/json
+
+{
+"nombre": "Samuel", 
+"apellido": "Angulo", 
+"correo": "samuel.angulo_c@mail.udp.cl",
+"carrera": "CIT", 
+"password": "123456"
+}
