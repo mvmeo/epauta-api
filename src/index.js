@@ -12,10 +12,10 @@ import profesoresRoutes from './routes/profesores.routes.js';
 import ramosRoutes from './routes/ramos.routes.js';
 import respuestasRoutes from './routes/respuestas.routes.js';
 
-const allowedOrigins = [, 'https://epauta.vercel.app/'];
+const allowedOrigins = ['http://localhost:5173', 'https://epauta.vercel.app/'];
 
 const corsOptions = {
-  origin: allowedOrigins,
+  origin: 'http://localhost:5173',
   credentials: true,
 };
 
