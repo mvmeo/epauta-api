@@ -29,7 +29,7 @@ import {
 
 const router = Router();
 
-router.get("/", authRequired, cache , getMaterial);
+router.get("/", cache , getMaterial);
 router.post(
   "/",
   authRequired,
